@@ -4,8 +4,8 @@
 /* CSS Variable */
 :root{
     /* First choice fonts are from google fonts */
-    --heading-font:'rubik-bubbles',sans-serif;
-    --primary-font:'patrick-hand', cursive;
+    --heading-font:'rubik bubbles', sans-serif;
+    --primary-font:'patrick hand', cursive;
     --hero-color:#f8f8ff; /*Ghost white*/
     --heading-color:#808080; /*Grey*/
     --primary-color:#4169E1; /*Royal blue*/
@@ -20,9 +20,10 @@
 
 /* Global styles */
 body{
-    /* font-family: */
+    font-family:var(--primary-font);
     width: 100%;
     background-color:#e3f2fd; /*Light blue*/
+    font-size: 20px;
 }
 
 
@@ -32,4 +33,12 @@ body{
     height: 300px;
     width: 100%;
     background-size: cover;
+    color:var(--hero-color);
+    line-height: 20px;
+    text-align: center;
  }
+
+ #hero h1,h2{
+    padding: 30px;
+    font-family:var(--heading-font)
+}
