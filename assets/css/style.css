@@ -1,0 +1,21 @@
+/* Google Fonts Import */   
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Rubik+Bubbles&display=swap');
+
+/* CSS Variable */
+:root{
+
+}
+
+/* Asterisk wildcard selector to overide default styles add by the browser */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body{
+    font-family: ;
+    width: 100%;
+    color: ;
+}
