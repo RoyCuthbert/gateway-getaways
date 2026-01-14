@@ -45,7 +45,6 @@ body{
 
 /* Form */
 #form{
-    width:90%;
     /* Trying to build a colour structure this needs to be changed later */
     background-color: var(--heading-color);
 }
