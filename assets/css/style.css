@@ -2,9 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Rubik+Bubbles&display=swap');
 
 /* CSS Variable */
-:root{
+/* :root{ */
 
-}
+/* } */
 
 /* Asterisk wildcard selector to overide default styles add by the browser */
 *{
@@ -15,7 +15,16 @@
 
 /* Global styles */
 body{
-    font-family: ;
+    /* font-family: */
     width: 100%;
-    color: ;
+    /* color: */
 }
+
+
+ /* Hero section */
+ #hero {
+    background-image: url("../images/rock-pool.jpg");
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+ }
