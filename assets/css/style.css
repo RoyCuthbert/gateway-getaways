@@ -2,9 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Rubik+Bubbles&display=swap');
 
 /* CSS Variable */
-/* :root{ */
-
-/* } */
+:root{
+    /* First choice fonts are from google fonts */
+    --heading-font:'rubik-bubbles',sans-serif;
+    --primary-font:'patrick-hand', cursive;
+    --hero-color:#f8f8ff; /*Ghost white*/
+    --heading-color:#808080; /*Grey*/
+    --primary-color:#4169E1; /*Royal blue*/
+}
 
 /* Asterisk wildcard selector to overide default styles add by the browser */
 *{
@@ -17,7 +22,7 @@
 body{
     /* font-family: */
     width: 100%;
-    /* color: */
+    background-color:#e3f2fd; /*Light blue*/
 }
 
 
