@@ -44,9 +44,9 @@ body{
 }
 
 /* Form */
-#form{
+#form-index{
     /* Trying to build a colour structure this needs to be changed later */
-    background-color: var(--heading-color);
+    background-color: var(--body-bg-color);
     color: var(--primary-color);
 }
 
