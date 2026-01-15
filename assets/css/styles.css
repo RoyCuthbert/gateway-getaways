@@ -58,4 +58,5 @@ body{
 
 footer a{
     color:var(--primary-color);
+    text-decoration-line: none;
 }
