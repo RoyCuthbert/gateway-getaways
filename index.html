@@ -71,21 +71,25 @@
     <section id="form-index" class="container-fluid">
       <div class="row">
         <div class="form-group col-md align-items-start flex-column">
+          <!-- Origin location -->
           <label for="origin" class="d-inline-flex">From</label>
           <input type="text" placeholder="City or Airport" class="form-control" id="origin" name="origin" required>
         </div>
         <div class="form-group col-md align-items-start flex-column">
-          <label for="depart" class="d-inline-flex">To</label>
-          <input type="text" placeholder="City or Airport" class="form-control" id="depart" name="depart" required>
+          <!-- Destination location -->
+          <label for="destination" class="d-inline-flex">To</label>
+          <input type="text" placeholder="City or Airport" class="form-control" id="destination" name="destination" required>
         </div>
       </div>
       <div class="row">
         <div class="form-group col-md align-items-start flex-column">
+          <!-- Departure date -->
           <label for="departure-date" class="d-inline-flex">Depart</label>
           <input type="date" class="form-control" id="departure-date" name="departure-date" onkeydown="return false"
             required>
         </div>
         <div class="form-group col-md align-items-start flex-column">
+          <!-- Return date -->
           <label for="return-date" class="d-inline-flex">Return</label>
           <input type="date" placeholder="One way" value="" onChange="this.setAttribute('value', this.value)"
             class="form-control" id="return-date" name="return-date">
@@ -93,6 +97,7 @@
       </div>
       <div class="row">
         <div class="form-group col-lg-3 align-items-start flex-column">
+          <!-- Adults -->
           <label for="adults" class="d-inline-flex col-auto">Adults <span class="sublabel">12+
             </span></label>
           <select class="form-select" id="adults"
@@ -109,6 +114,7 @@
           </select>
         </div>
         <div class="form-group col-lg-3 align-items-start flex-column">
+          <!-- Children -->
           <label for="children" class="d-inline-flex col-auto">Children <span class="sublabel"> 2-11
             </span></label>
           <select class="form-select" id="children">
@@ -124,6 +130,7 @@
           </select>
         </div>
         <div class="form-group col-lg-3 align-items-start flex-column">
+          <!-- Infants -->
           <label for="infants" class="d-inline-flex col-auto">Infants <span class="sublabel"> less than
               2</span></label>
           <select class="form-select" id="infants">
@@ -131,6 +138,7 @@
             <option value="1">1</option>
           </select>
         </div>
+        <!-- Cabin Class -->
         <div class="form-group col-lg-3 align-items-start flex-column">
           <label for="cabin" class="d-inline-flex">Cabin</label>
           <select class="form-select" id="cabin">
@@ -141,15 +149,15 @@
           </select>
         </div>
       </div>
-      <div class="row">
-        
+      <div class="row"> 
         <div class="form-group col-lg-2 align-items-start flex-column pt-lg-4">
           <div class="form-check form-switch">
+            <!-- Direct flight toggle switch -->
             <input class="form-check-input align-self-center" type="checkbox" id="directFlights">
             <label class="form-check-label d-inline-flex align-self-center" for="directFlights">Direct
               flights</label>
             <div class="col-lg-2 pt-lg-4">
-              <!-- Toggle with two labels -->
+              <!-- Price toggle with two labels -->
               <div class="d-flex align-items-center gap-2 mb-3">
                 <span id="monthlyLabel" class="fw-bold text-primary">Amount each month</span>
               <div class="form-check form-switch m-0">
@@ -157,7 +165,7 @@
                 </div>
                 <span id="totalLabel" class="text-muted">Price Total</span>
               </div>
-              <!-- Money input -->
+              <!-- Money input for vacation-->
               <div class="input-group">
                 <span class="input-group-text">£</span>
                 <input type="number" class="form-control" id="amountInput" placeholder="Enter amount" min="0">
@@ -167,14 +175,58 @@
         </div>
       </div>
       <div class="form-group col-lg-2 align-items-end flex-column pt-lg-4">
+        <!-- Search button -->
         <button>
           <a class="search-button d-flex border px-3 rounded-3 focus-ring text-decoration-none bg-white" target="_blank"
             title="Search Vacations" aria-label="Will fetch prices for vacations">
             <i class="fa-solid fa-magnifying-glass"></i> Search
-          </a></button></div>
-      <hr>
-
+          </a>
+        </button>
+        </div>
     </section>
+      <hr>
+      <!-- Best Destination  -->
+    <section class="best-destinations">
+      <h2>Best Destinations</h2>  
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="..." class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="assets/images/rock-pool.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>    
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</section>
+
+
+
+
+
     <div class="card text-center border border-bottom-0">
       <div class="card-header" style="background-color: var(--body-bg-color);">
         Still Deciding?
@@ -189,7 +241,6 @@
         Don't wait too long!
       </div>
     </div>
-
   </main>
   <!-- Footer-->
   <footer>
