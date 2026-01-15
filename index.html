@@ -131,9 +131,7 @@
             <option value="1">1</option>
           </select>
         </div>
-      </div>
-      <div class="row">
-        <div class="form-group col-lg-6 align-items-start flex-column">
+        <div class="form-group col-lg-3 align-items-start flex-column">
           <label for="cabin" class="d-inline-flex">Cabin</label>
           <select class="form-select" id="cabin">
             <option value="ECONOMY">Economy</option>
@@ -142,40 +140,61 @@
             <option value="FIRST">First</option>
           </select>
         </div>
-        <div class="form-group col-lg-4 align-items-start flex-column pt-lg-4">
+      </div>
+      <div class="row">
+        
+        <div class="form-group col-lg-2 align-items-start flex-column pt-lg-4">
           <div class="form-check form-switch">
             <input class="form-check-input align-self-center" type="checkbox" id="directFlights">
             <label class="form-check-label d-inline-flex align-self-center" for="directFlights">Direct
               flights</label>
+            <div class="col-lg-2 pt-lg-4">
+              <!-- Toggle with two labels -->
+              <div class="d-flex align-items-center gap-2 mb-3">
+                <span id="monthlyLabel" class="fw-bold text-primary">Amount each month</span>
+              <div class="form-check form-switch m-0">
+                  <input class="form-check-input" type="checkbox" id="priceToggle">
+                </div>
+                <span id="totalLabel" class="text-muted">Price Total</span>
+              </div>
+              <!-- Money input -->
+              <div class="input-group">
+                <span class="input-group-text">£</span>
+                <input type="number" class="form-control" id="amountInput" placeholder="Enter amount" min="0">
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <div class="form-group col-lg-2 align-items-end flex-column pt-lg-4">
         <button>
-        <a class="search-button d-flex border px-3 rounded-3 focus-ring text-decoration-none bg-white" target="_blank" title="Search Flights">
-              <i class="fa-solid fa-magnifying-glass"></i> Search
-            </a></button></div>
+          <a class="search-button d-flex border px-3 rounded-3 focus-ring text-decoration-none bg-white" target="_blank"
+            title="Search Flights">
+            <i class="fa-solid fa-magnifying-glass"></i> Search
+          </a></button></div>
       <hr>
-     
+
     </section>
     <div class="card text-center border border-bottom-0">
-  <div class="card-header" style="background-color: var(--body-bg-color);">
-    Still Deciding?
-  </div>
-  <div class="card-body">
-    <h5 class="card-title">Book some time for away with your own affordability</h5>
-    <p class="card-text">Looking at multiple destinations to find something that can work with your budget</p>
-    <a href="#form-index" class="btn btn-primary">Ready to get packing for your all in one flight and hotel search</a>
-  </div>
-  <div id="card-footer"class="card-footer text-body-secondary"style="background-color: var(--body-bg-color);">
-    Don't wait too long!
-  </div>
-</div>
+      <div class="card-header" style="background-color: var(--body-bg-color);">
+        Still Deciding?
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Book some time for away with your own affordability</h5>
+        <p class="card-text">Looking at multiple destinations to find something that can work with your budget</p>
+        <a href="#form-index" class="btn btn-primary">Ready to get packing for your all in one flight and hotel
+          search</a>
+      </div>
+      <div id="card-footer" class="card-footer text-body-secondary" style="background-color: var(--body-bg-color);">
+        Don't wait too long!
+      </div>
+    </div>
 
   </main>
   <!-- Footer-->
   <footer>
-    <footer class="d-flex justify-content-center py-5" style="background-color:var(--body-bg-color);" data-bs-theme="light">
+    <footer class="d-flex justify-content-center py-5" style="background-color:var(--body-bg-color);"
+      data-bs-theme="light">
       <div class="container row">
         <!-- Contact Details Container -->
         <div class="col-12 col-md-4 mb-4 mb-md-0">
