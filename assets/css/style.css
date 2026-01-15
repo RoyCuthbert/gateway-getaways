@@ -9,6 +9,7 @@
     --hero-color:#f8f8ff; /*Ghost white*/
     --heading-color:#808080; /*Grey*/
     --primary-color:#4169E1; /*Royal blue*/
+    --body-bg-color:#e3f2fd; /*Light blue*/
 }
 
 /* Asterisk wildcard selector to overide default styles add by the browser */
@@ -22,10 +23,9 @@
 body{
     font-family:var(--primary-font);
     width: 100%;
-    background-color:#e3f2fd; /*Light blue*/
+    background-color:var(--bakground-color);
     font-size: 20px;
 }
-
 
  /* Hero section */
  #hero {
@@ -48,4 +48,14 @@ body{
     /* Trying to build a colour structure this needs to be changed later */
     background-color: var(--heading-color);
     color: var(--primary-color);
+}
+
+
+#form a{
+    color:var(--primary-color);
+}
+
+
+footer a{
+    color:var(--primary-color);
 }

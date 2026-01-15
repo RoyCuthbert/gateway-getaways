@@ -27,7 +27,7 @@
   <!-- Header -->
   <header>
     <!-- Created some style to navbar adding some colour for the theme of my website -->
-    <nav class="navbar navbar-expand-lg" style="background-color:#e3f2fd;" data-bs-theme="light">
+    <nav class="navbar navbar-expand-lg" style="background-color:var(--body-bg-color);" data-bs-theme="light">
       <div class="container-fluid">
         <!-- Including a logo that i had from an old facebook travel page -->
         <a class="navbar-brand" href="index.html"><img src="assets/images/logo.jpg" alt="Logo" width="30" height="30"
@@ -67,7 +67,8 @@
         <h2>Start your adventure here</h2>
       </div>
     </section>
-    <section id="form" class="container-fluid">
+    <hr>
+    <section id="form-index" class="container-fluid">
       <div class="row">
         <div class="form-group col-md align-items-start flex-column">
           <label for="origin" class="d-inline-flex">From</label>
@@ -154,15 +155,27 @@
         <a class="search-button d-flex border px-3 rounded-3 focus-ring text-decoration-none bg-white" target="_blank" title="Search Flights">
               <i class="fa-solid fa-magnifying-glass"></i> Search
             </a></button></div>
-      
+      <hr>
      
     </section>
-
+    <div class="card text-center">
+  <div class="card-header" style="background-color: var(--body-bg-color);">
+    Still Deciding?
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Book some time for away with your own affordability</h5>
+    <p class="card-text">Looking at multiple destinations to find something that can work with your budget</p>
+    <a href="#form-index" class="btn btn-primary">Ready to get packing for your all in one flight and hotel search</a>
+  </div>
+  <div id="card-footer"class="card-footer text-body-secondary"style="background-color: var(--body-bg-color);">
+    Don't wait too long!
+  </div>
+</div>
 
   </main>
   <!-- Footer-->
   <footer>
-    <footer class="d-flex justify-content-center py-5" style="background-color:#e3f2fd;" data-bs-theme="light">
+    <footer class="d-flex justify-content-center py-5" style="background-color:var(--body-bg-color);" data-bs-theme="light">
       <div class="container row">
         <!-- Contact Details Container -->
         <div class="col-12 col-md-4 mb-4 mb-md-0">
