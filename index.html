@@ -91,47 +91,71 @@
         </div>
       </div>
       <div class="row">
-   <div class="form-group col-lg-3 align-items-start flex-column">
-      <label for="adults" class="d-inline-flex col-auto">Adults <span class="sublabel">12+ 
-      </span></label> 
-      <select class="form-select" id="adults" 
-         onchange="javascript: dynamicDropDown(this.options[this.selectedIndex].value);">
-         <option value="1">1</option>
-         <option value="2">2</option>
-         <option value="3">3</option>
-         <option value="4">4</option>
-         <option value="5">5</option>
-         <option value="6">6</option>
-         <option value="7">7</option>
-         <option value="8">8</option>
-         <option value="9">9</option>
-      </select>
-   </div>
-   <div class="form-group col-lg-3 align-items-start flex-column">
-      <label for="children" class="d-inline-flex col-auto">Children <span class="sublabel"> 2-11 
-      </span></label> 
-      <select class="form-select" id="children">
-         <option value="0">0</option>
-         <option value="1">1</option>
-         <option value="2">2</option>
-         <option value="3">3</option>
-         <option value="4">4</option>
-         <option value="5">5</option>
-         <option value="6">6</option>
-         <option value="7">7</option>
-         <option value="8">8</option>
-      </select>
-   </div>
-   <div class="form-group col-lg-3 align-items-start flex-column">
-      <label for="infants" class="d-inline-flex col-auto">Infants <span class="sublabel"> less than 
-      2</span></label> 
-      <select class="form-select" id="infants">
-         <option value="0">0</option>
-         <option value="1">1</option>
-      </select>
-   </div>
-</div>
-
+        <div class="form-group col-lg-3 align-items-start flex-column">
+          <label for="adults" class="d-inline-flex col-auto">Adults <span class="sublabel">12+
+            </span></label>
+          <select class="form-select" id="adults"
+            onchange="javascript: dynamicDropDown(this.options[this.selectedIndex].value);">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+        </div>
+        <div class="form-group col-lg-3 align-items-start flex-column">
+          <label for="children" class="d-inline-flex col-auto">Children <span class="sublabel"> 2-11
+            </span></label>
+          <select class="form-select" id="children">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+          </select>
+        </div>
+        <div class="form-group col-lg-3 align-items-start flex-column">
+          <label for="infants" class="d-inline-flex col-auto">Infants <span class="sublabel"> less than
+              2</span></label>
+          <select class="form-select" id="infants">
+            <option value="0">0</option>
+            <option value="1">1</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-lg-6 align-items-start flex-column">
+          <label for="cabin" class="d-inline-flex">Cabin</label>
+          <select class="form-select" id="cabin">
+            <option value="ECONOMY">Economy</option>
+            <option value="PREMIUM_ECONOMY">Premium Economy</option>
+            <option value="BUSINESS">Business</option>
+            <option value="FIRST">First</option>
+          </select>
+        </div>
+        <div class="form-group col-lg-4 align-items-start flex-column pt-lg-4">
+          <div class="form-check form-switch">
+            <input class="form-check-input align-self-center" type="checkbox" id="directFlights">
+            <label class="form-check-label d-inline-flex align-self-center" for="directFlights">Direct
+              flights</label>
+          </div>
+        </div>
+      </div>
+      <div class="form-group col-lg-2 align-items-end flex-column pt-lg-4">
+        <button>
+        <a class="search-button d-flex border px-3 rounded-3 focus-ring text-decoration-none bg-white" target="_blank" title="Search Flights">
+              <i class="fa-solid fa-magnifying-glass"></i> Search
+            </a></button></div>
+      
+     
     </section>
 
 
