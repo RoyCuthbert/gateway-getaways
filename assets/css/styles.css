@@ -1,62 +1,93 @@
-/* Google Fonts Import */   
+/* Google Fonts Import */
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Rubik+Bubbles&display=swap');
 
 /* CSS Variable */
-:root{
+:root {
     /* First choice fonts are from google fonts */
-    --heading-font:'rubik bubbles', sans-serif;
-    --primary-font:'patrick hand', cursive;
-    --hero-color:#f8f8ff; /*Ghost white*/
-    --heading-color:#808080; /*Grey*/
-    --primary-color:#4169E1; /*Royal blue*/
-    --body-bg-color:#e3f2fd; /*Light blue*/
+    --heading-font: 'rubik bubbles', sans-serif;
+    --primary-font: 'patrick hand', cursive;
+    --hero-color: #f8f8ff;
+    /*Ghost white*/
+    --heading-color: #808080;
+    /*Grey*/
+    --primary-color: #4169E1;
+    /*Royal blue*/
+    --body-bg-color: #e3f2fd;
+    /*Light blue*/
 }
 
 /* Asterisk wildcard selector to overide default styles add by the browser */
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
 /* Global styles */
-body{
-    font-family:var(--primary-font);
+body {
+    font-family: var(--primary-font);
     width: 100%;
-    background-color:var(--bakground-color);
+    background-color: var(--bakground-color);
     font-size: 20px;
 }
 
- /* Hero section */
- #hero {
+/* Hero section */
+#hero {
     background-image: url("../images/rock-pool.jpg");
     height: 300px;
     width: 100%;
-    background-size:cover;
-    color:var(--hero-color);
+    background-size: cover;
+    color: var(--hero-color);
     line-height: 20px;
     text-align: center;
- }
+}
 
- #hero h1,h2{
+#hero h1,
+h2 {
     padding: 30px;
-    font-family:var(--heading-font)
+    font-family: var(--heading-font)
 }
 
 /* Form */
-#form-index{
+#form-index {
     /* Trying to build a colour structure this needs to be changed later */
     background-color: var(--body-bg-color);
     color: var(--primary-color);
 }
 
 
-#form a{
-    color:var(--primary-color);
+#form a {
+    color: var(--primary-color);
+}
+
+/* Travel Form styles for Date*/
+input[type="date"] {
+    position: relative;
+}
+
+input[type="date"]:before {
+    content: attr(placeholder);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    color: rgba(0, 0, 0, 0.65);
+    pointer-events: none;
+    line-height: 1.5;
+    padding: 10px 0.5rem 0 0.5rem;
+}
+
+input[type="date"]:focus:before,
+input[type="date"]:not([value=""]):before {
+    display: none;
 }
 
 
-footer a{
-    color:var(--primary-color);
+
+
+footer a {
+    color: var(--primary-color);
     text-decoration-line: none;
 }
