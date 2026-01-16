@@ -292,7 +292,7 @@
         <div class="weather-switch">
           <span id="cold-weather" class="fw-bold text-primary">Cold weather</span>
           <label class="switch">
-            <input type="checkbox" id="weatherToggle">
+            <input type="checkbox" id="weather-toggle" onchange="weatherChangeImages()" >
             <span class="slider"></span>
           </label>
           <span id="hot-weather" class=" fw-bold text-danger">Hot weather</span>
@@ -300,8 +300,8 @@
       </div>
 
       <!-- Image Containers -->
-      <div id="image-set-cold-Weather" class="image-gallery">
-        <!-- Thumbnails for Cold Set -->>
+      <div id="image-set-cold-weather" class="image-gallery">
+        <!-- Thumbnails for Cold Set -->
           <div class="row g-4 mt-4">
           <!-- Single Card -->
           <div class="col-12 col-lg-6 col-xl-4">
