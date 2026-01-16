@@ -103,7 +103,7 @@
           <label for="adults" class="d-inline-flex col-auto">Adults  <span class="sublabel">12+
             </span></label>
           <select class="form-select" id="adults"
-            onchange="javascript: dynamicDropDown(this.options[this.selectedIndex].value);">
+            onchange="dynamicDropDown(this.options[this.selectedIndex].value);">
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -273,11 +273,14 @@
     <section class="weather-temperature">
       <div class="d-flex align-items-center gap-2 mb-3">
         <h2>Place to go dependent on Weather Temperature</h2>
-        <span id="coldWeather" class="fw-bold text-primary">Cold weather</span>
-        <div class="form-check form-switch m-0">
-          <input class="form-check-input" type="checkbox" id="weatherToggle">
-        </div>
+        <div class="weather-switch"><span id="coldWeather" class="fw-bold text-primary">Cold weather</span>
+        <label class="switch">
+          <input type="checkbox" id="weatherToggle">
+          <span class="slider"></span>
+        </label>
         <span id="hotWeather" class=" fw-bold text-danger">Hot weather</span>
+      </div>
+        
       </div>
 
       <!-- Image Containers -->

@@ -118,6 +118,74 @@ input[type="date"]:not([value=""]):before {
 
 }
 
+.weather-switch {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 600;
+}
+
+/* Switch wrapper */
+.switch {
+  position: relative;
+  width: 56px;
+  height: 28px;
+}
+
+/* Hide checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Track */
+.slider {
+  position: absolute;
+  inset: 0;
+  background-color: #0d6efd; /* blue track */
+  border-radius: 999px;
+  transition: background-color 0.3s ease;
+}
+
+/* Circle (knob) */
+.slider::before {
+  content: "";
+  position: absolute;
+  height: 22px;
+  width: 22px;
+  left: 3px;
+  top: 3px;
+  background-color: red; /* red circle */
+  border-radius: 50%;
+  border: 2px solid white;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* CHECKED STATE */
+.switch input:checked + .slider {
+  background-color: red; /* red track */
+}
+
+.switch input:checked + .slider::before {
+  transform: translateX(28px);
+  background-color: #0d6efd; /* blue circle */
+}
+
+/* Optional focus / accessibility */
+.switch input:focus-visible + .slider {
+  box-shadow: 0 0 0 3px rgba(13,110,253,0.4);
+}
+
+/* Labels */
+.label.cold {
+  color: #0d6efd;
+}
+
+.label.hot {
+  color: red;
+}
+
 footer a {
     color: var(--primary-color);
     text-decoration-line: none;
