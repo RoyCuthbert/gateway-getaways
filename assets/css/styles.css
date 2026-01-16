@@ -84,8 +84,35 @@ input[type="date"]:not([value=""]):before {
     display: none;
 }
 
+#best-destinations {
+    height: 400px; /* Set a fixed height for all containers */
+    width: 100%; /* Ensure containers are full width */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Hides any part of the image that goes outside the container */
+    position: relative;
+}
+
+#best-destinations img {
+   height: 100%; /* Set a fixed height for all containers */
+    width: auto; /* auto width for aspect ratio*/
+    object-fit: cover;
+    opacity: 0.7;
+}
 
 
+.carousel-caption {
+    position: absolute; /* Position the caption relative to the container */
+    top: 48%;
+    z-index: 2; /* Ensure caption is above the image */
+    color: rgb(0, 0, 0); /* Make text visible over images */
+    text-align: center; /* Center the text horizontally within the caption div */
+    width: 75%; /* Control the width of the caption text block */
+    font-size: xx-large;
+    font-weight: 900;
+
+}
 
 footer a {
     color: var(--primary-color);
