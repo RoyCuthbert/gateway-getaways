@@ -45,7 +45,7 @@
                 href="index.html">Vacation</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria- label="Navigate to travel page" href="travel.html">Travel</a>
+              <a class="nav-link" aria-label="Navigate to travel page" href="travel.html">Travel</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" aria-label="Navigate to UK stay page" href="uk-stays.html">Uk Stays</a>
@@ -93,14 +93,14 @@
         <div class="form-group col-md align-items-start flex-column">
           <!-- Return date -->
           <label for="return-date" class="d-inline-flex">Return</label>
-          <input type="date" placeholder="One way" value="" onChange="this.setAttribute('value', this.value)"
+          <input type="type" value="One way" onclick="activateReturnDate(this)"
             class="form-control" id="return-date" name="return-date">
         </div>
       </div>
       <div class="row">
         <div class="form-group col-lg-3 align-items-start flex-column">
           <!-- Adults -->
-          <label for="adults" class="d-inline-flex col-auto">Adults <span class="sublabel">12+
+          <label for="adults" class="d-inline-flex col-auto">Adults  <span class="sublabel">12+
             </span></label>
           <select class="form-select" id="adults"
             onchange="javascript: dynamicDropDown(this.options[this.selectedIndex].value);">
@@ -138,6 +138,7 @@
           <select class="form-select" id="infants">
             <option value="0">0</option>
             <option value="1">1</option>
+            <option value="2">2</option>
           </select>
         </div>
         <!-- Cabin Class -->
@@ -381,7 +382,7 @@
   </script>
   <!-- Font Awesome kit from fontawesome.com-->
   <script src="https://kit.fontawesome.com/aa80f5b7e4.js" crossorigin="anonymous"></script>
-  <script src="script.js"></script>
+  <script src="/assets/js/script.js"></script>
 </body>
 
 </html>
