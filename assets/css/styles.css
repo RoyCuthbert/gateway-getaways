@@ -178,11 +178,11 @@ input[type="date"]:not([value=""]):before {
 }
 
 /* Labels */
-.label.cold {
+.cold-weather {
   color: #0d6efd;
 }
 
-.label.hot {
+.hot-weather {
   color: red;
 }
 
