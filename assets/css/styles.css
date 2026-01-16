@@ -128,7 +128,7 @@ input[type="date"]:not([value=""]):before {
 /* Switch wrapper */
 .switch {
   position: relative;
-  width: 56px;
+  width: 70px;
   height: 28px;
 }
 
@@ -144,7 +144,7 @@ input[type="date"]:not([value=""]):before {
   position: absolute;
   inset: 0;
   background-color: #0d6efd; /* blue track */
-  border-radius: 999px;
+    border-radius: 10%;
   transition: background-color 0.3s ease;
 }
 
