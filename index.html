@@ -70,7 +70,7 @@
     </section>
     <hr>
     <section id="form-index" class="container-fluid">
-          <h3>Book your trip below</h3>
+      <h3>Book your trip below</h3>
       <div class="row">
         <div class="form-group col-md align-items-start flex-column">
           <!-- Origin location -->
@@ -94,17 +94,16 @@
         <div class="form-group col-md align-items-start flex-column">
           <!-- Return date -->
           <label for="return-date" class="d-inline-flex">Return</label>
-          <input type="text" value="One way" onclick="activateReturnDate(this)"
-            class="form-control" id="return-date" name="return-date">
+          <input type="text" value="One way" onclick="activateReturnDate(this)" class="form-control" id="return-date"
+            name="return-date">
         </div>
       </div>
       <div class="row">
         <div class="form-group col-lg-3 align-items-start flex-column">
           <!-- Adults -->
-          <label for="adults" class="d-inline-flex col-auto">Adults  <span class="sublabel">12+
+          <label for="adults" class="d-inline-flex col-auto">Adults <span class="sublabel">12+
             </span></label>
-          <select class="form-select" id="adults"
-            onchange="dynamicDropDown(this.options[this.selectedIndex].value);">
+          <select class="form-select" id="adults" onchange="dynamicDropDown(this.options[this.selectedIndex].value);">
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -154,37 +153,37 @@
         </div>
       </div>
       <div class="row align-items-center mt-4 py-3">
-        <div class="col-lg-3">      
+        <div class="col-lg-3">
           <div class="form-check form-switch m-0">
             <!-- Direct flight toggle switch -->
             <input class="form-check-input" type="checkbox" id="directFlights">
             <label class="form-check-label" for="directFlights">Direct
               flights</label>
           </div>
-        </div>    
-              <!-- Price toggle with two labels -->
-              <div class="col-lg-5 d-flex align-items-center gap-3">
-                <span id="monthlyLabel" class="small text-nowrap">Amount each month</span>
-                <div class="form-check form-switch m-0">
-                  <input class="form-check-input" type="checkbox" id="priceToggle">
-                </div>
-                <span id="totalLabel" class="small text-nowrap">Price Total</span>
-              <!-- Money input for vacation-->
-              <div class="input-group ms-3" style="max-width:200px">
-                <span class="input-group-text">£</span>
-                <input type="number" class="form-control" id="amountInput" placeholder="0.00" min="0">
-              </div>
-          </div><!-- Search button -->
+        </div>
+        <!-- Price toggle with two labels -->
+        <div class="col-lg-5 d-flex align-items-center gap-3">
+          <span id="monthlyLabel" class="small text-nowrap">Amount each month</span>
+          <div class="form-check form-switch m-0">
+            <input class="form-check-input" type="checkbox" id="priceToggle">
+          </div>
+          <span id="totalLabel" class="small text-nowrap">Price Total</span>
+          <!-- Money input for vacation-->
+          <div class="input-group ms-3" style="max-width:200px">
+            <span class="input-group-text">£</span>
+            <input type="number" class="form-control" id="amountInput" placeholder="0.00" min="0">
+          </div>
+        </div><!-- Search button -->
         <div class="form-group col-lg-4 d-flex justify-content-center mt-3 mt-lg-0">
           <button>
-          <a class="search-button align-items-center border px-3 rounded-3 focus-ring text-decoration-none bg-white" target="_blank"
-            title="Search Vacations" aria-label="Will fetch prices for vacations">
-            <i class="fa-solid fa-magnifying-glass"></i> Search
-          </a>
-        </button>
-      </div>  
+            <a class="search-button align-items-center border px-3 rounded-3 focus-ring text-decoration-none bg-white"
+              target="_blank" title="Search Vacations" aria-label="Will fetch prices for vacations">
+              <i class="fa-solid fa-magnifying-glass"></i> Search
+            </a>
+          </button>
         </div>
-      
+      </div>
+
     </section>
     <hr>
     <!-- Best Destination  -->
@@ -194,64 +193,80 @@
       <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="assets/images/best-destinations/bali.jpg" class="d-block w-100" alt="Picture of sea temple in Bali.">
+            <img src="assets/images/best-destinations/bali.jpg" class="d-block w-100"
+              alt="Picture of sea temple in Bali.">
             <div class="carousel-caption d-none d-md-block">
               <h3 class="h2 fw-bold">No.1 Bali</h3>
               <p>Indonesia</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="assets/images/best-destinations/london.jpg" class="d-block w-100" alt="Picture of london eye at the angle of the river thames.">
+            <img src="assets/images/best-destinations/london.jpg" class="d-block w-100"
+              alt="Picture of london eye at the angle of the river thames.">
             <div class="carousel-caption d-none d-md-block">
               <h3 class="h2 fw-bold">No.2 London</h3>
               <p>England</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="assets/images/best-destinations/dubai.jpg" class="d-block w-100" alt="Picture of the buildings either side of river in Dubai.">
+            <img src="assets/images/best-destinations/dubai.jpg" class="d-block w-100"
+              alt="Picture of the buildings either side of river in Dubai.">
             <div class="carousel-caption d-none d-md-block">
               <h3 class="h2 fw-bold">No.3 Dubai</h3>
               <p>United Arab Emirates</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="assets/images/best-destinations/hanoi.jpg" class="d-block w-100" alt="Picture of the train track in middle of street in Hanoi.">
+            <img src="assets/images/best-destinations/hanoi.jpg" class="d-block w-100"
+              alt="Picture of the train track in middle of street in Hanoi.">
             <div class="carousel-caption d-none d-md-block">
               <h3 class="h2 fw-bold">No.4 Hanoi</h3>
               <p>Vietnam</p>
             </div>
-          </div><div class="carousel-item">
-            <img src="assets/images/best-destinations/paris.jpg" class="d-block w-100" alt="Picture of the eiffel tower from in middle of a street in Paris.">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/best-destinations/paris.jpg" class="d-block w-100"
+              alt="Picture of the eiffel tower from in middle of a street in Paris.">
             <div class="carousel-caption d-none d-md-block">
               <h3 class="h2 fw-bold">No.5 Paris</h3>
               <p>France</p>
             </div>
-          </div><div class="carousel-item">
-            <img src="assets/images/best-destinations/rome.jpg" class="d-block w-100" alt="Picture of the Rome colosseum beyond a balcony of someone having a cuppa in Rome.">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/best-destinations/rome.jpg" class="d-block w-100"
+              alt="Picture of the Rome colosseum beyond a balcony of someone having a cuppa in Rome.">
             <div class="carousel-caption d-none d-md-block">
               <h3 class="h2 fw-bold">No.6 Rome</h3>
               <p>Italy</p>
             </div>
-          </div><div class="carousel-item">
-            <img src="assets/images/best-destinations/marrakech.jpg" class="d-block w-100" alt="Picture of the Marrakech market">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/best-destinations/marrakech.jpg" class="d-block w-100"
+              alt="Picture of the Marrakech market">
             <div class="carousel-caption d-none d-md-block">
               <h3 class="h2 fw-bold">No.7 Marrakech</h3>
               <p>Morocco</p>
             </div>
-          </div><div class="carousel-item">
-            <img src="assets/images/best-destinations/bangkok.jpg" class="d-block w-100" alt="Picture of the buildings in Bangkok">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/best-destinations/bangkok.jpg" class="d-block w-100"
+              alt="Picture of the buildings in Bangkok">
             <div class="carousel-caption d-none d-md-block">
               <h3 class="h2 fw-bold">No.8 Bangkok</h3>
               <p>Thailand</p>
             </div>
-          </div><div class="carousel-item">
-            <img src="assets/images/best-destinations/crete.jpg" class="d-block w-100" alt="Picture of a birdseye view across the water looking towards Crete">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/best-destinations/crete.jpg" class="d-block w-100"
+              alt="Picture of a birdseye view across the water looking towards Crete">
             <div class="carousel-caption d-none d-md-block">
               <h3 class="h2 fw-bold">No.9 Crete</h3>
               <p>Greece</p>
             </div>
-          </div><div class="carousel-item">
-            <img src="assets/images/best-destinations/new-york-city.jpg" class="d-block w-100" alt="Picture of the Chrysler building from the air with buildings and Queensboro bridge in background">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/best-destinations/new-york-city.jpg" class="d-block w-100"
+              alt="Picture of the Chrysler building from the air with buildings and Queensboro bridge in background">
             <div class="carousel-caption  ">
               <h3 class="h2 fw-bold">No.10 New York City</h3>
               <p>United States of America</p>
@@ -276,21 +291,110 @@
         <h2>Place to go dependent on Weather Temperature</h2>
         <div class="weather-switch">
           <span id="cold-weather" class="fw-bold text-primary">Cold weather</span>
-        <label class="switch">
-          <input type="checkbox" id="weatherToggle">
-          <span class="slider"></span>
-        </label>
-        <span id="hot-weather" class=" fw-bold text-danger">Hot weather</span>
-      </div>
-        
+          <label class="switch">
+            <input type="checkbox" id="weatherToggle">
+            <span class="slider"></span>
+          </label>
+          <span id="hot-weather" class=" fw-bold text-danger">Hot weather</span>
+        </div>
       </div>
 
       <!-- Image Containers -->
       <div id="image-set-cold-Weather" class="image-gallery">
-        <!-- Thumbnails for Cold Set -->
-        <img src="" alt="" class="thumbnail">
-        <img src="" alt="" class="thumbnail">
-
+        <!-- Thumbnails for Cold Set -->>
+          <div class="row g-4 mt-4">
+          <!-- Single Card -->
+          <div class="col-12 col-lg-6 col-xl-4">
+            <div class="card position-relative h-100">
+              <img src="assets/images/cold-weather/tromso.jpg" class="card-img h-100" alt="Northern lights being seen over the mountains" loading="lazy">
+              <div class="card-img-overlay">
+                <h2 class="card-title text-white">Tromso (Norway)</h2>
+              </div>
+            </div>
+          </div>
+          <!-- Single Card -->
+          <div class="col-12 col-lg-6 col-xl-4">
+            <div class="card position-relative h-100">
+              <img src="assets/images/cold-weather/transylvania.jpg" class="card-img h-100" alt="Picture of dracula's castle in Transylvania" loading="lazy">
+              <div class="card-img-overlay">
+                <h2 class="card-title text-white">Transylvania (Romania)</h2>
+              </div>
+            </div>
+          </div>
+          <!-- Single Card -->
+          <div class="col-12 col-lg-6 col-xl-4">
+            <div class="card position-relative h-100">
+              <img src="assets/images/cold-weather/reykjavik.jpg" class="card-img h-100" alt="Picture of waterfall in Reykjavik" loading="lazy">
+              <div class="card-img-overlay">
+                <h2 class="card-title text-white">Reykjavik (Iceland)</h2>
+              </div>
+              
+            </div>
+          </div>
+          <!-- Single Card -->
+          <div class="col-12 col-lg-6 col-xl-4">
+            <div class="card position-relative h-100">
+              <img src="assets/images/cold-weather/onsen-hot-springs.jpg" class="card-img h-100" alt="Picture of Onsen hot springs in Japan" loading="lazy">
+              <div class="card-img-overlay">
+                <h2 class="card-title text-white">Onsen (Japan)</h2>
+              </div>
+            </div>
+          </div>
+          <!-- Single Card -->
+          <div class="col-12 col-lg-6 col-xl-4">
+            <div class="card position-relative h-100">
+              <img src="assets/images/cold-weather/lapland.jpg" class="card-img h-100" alt="Reindeer sleigh ride in lapland" loading="lazy">
+              <div class="card-img-overlay">
+                <h2 class="card-title text-white">Lapland (Finland)</h2>
+              </div>
+            </div>
+          </div>
+          <!-- Single Card -->
+          <div class="col-12 col-lg-6 col-xl-4">
+            <div class="card position-relative h-100">
+              <img src="assets/images/cold-weather/iglu-dorf.jpg" class="card-img h-100" alt="Picture of Igloo in iglu-dorf Switzerland" loading="lazy">
+              <div class="card-img-overlay">
+                <h2 class="card-title text-white">Iglu-dorf (Switzerland)</h2>
+              </div>
+            </div>
+          </div>
+          <!-- Single Card -->
+          <div class="col-12 col-lg-6 col-xl-4">
+            <div class="card position-relative h-100">
+              <img src="assets/images/cold-weather/hanoi.jpg" class="card-img h-100" alt="Picture of train through street in Hanoi Vietnam" loading="lazy">
+              <div class="card-img-overlay">
+                <h2 class="card-title text-white">Hanoi (Vietnam)</h2>
+              </div>
+            </div>
+          </div>
+          <!-- Single Card -->
+          <div class="col-12 col-lg-6 col-xl-4">
+            <div class="card position-relative h-100">
+              <img src="assets/images/cold-weather/cologne.jpg" class="card-img h-100" alt="Picture of lady infront of cologne xmas market" loading="lazy">
+              <div class="card-img-overlay">
+                <h2 class="card-title text-white">Cologne (Germany)</h2>
+              </div>
+            </div>
+          </div>
+          <!-- Single Card -->
+          <div class="col-12 col-lg-6 col-xl-4">
+            <div class="card position-relative h-100">
+              <img src="assets/images/cold-weather/churchill.jpg" class="card-img h-100" alt="Picture of polar bear in natural habitat in churchill" loading="lazy">
+              <div class="card-img-overlay">
+                <h2 class="card-title text-white">Churchill (Canada)</h2>
+              </div>
+            </div>
+          </div>
+          <!-- Single Card -->
+          <div class="col-12 col-lg-6 col-xl-4">
+            <div class="card position-relative h-100">
+              <img src="assets/images/cold-weather/caucasus-mountains.jpg" class="card-img h-100" alt="Picture of Caucasus mountains in Georgia" loading="lazy">
+              <div class="card-img-overlay">
+                <h2 class="card-title text-white">Caucasus mountains(Georgia)</h2>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div id="image-set-hot-weather" class="image-gallery" style="display: none;">
@@ -324,61 +428,61 @@
     </div>
   </main>
   <!-- Footer-->
-    <footer class="d-flex justify-content-center py-5" style="background-color:var(--body-bg-color);"
-      data-bs-theme="light">
-      <div class="container row">
-        <!-- Contact Details Container -->
-        <div class="col-12 col-md-4 mb-4 mb-md-0">
-          <h3 class="text-center text-black-50">Contact Details</h3>
-          <ul class="list-unstyled text-center mt-3">
-            <li class="mb-2 text-primary">
-              <a href="tel:012345678910" target="_blank">
-                <i class="fa-solid fa-phone me-2"></i> 012345678910</a>
-            </li>
-            <li class="mb-2 text-primary">
-              <a aria-label="Opens a new tab to email" href="mailto:gatewaygetaways.com" target="_blank">
-                <i class="fa-solid fa-envelope me-2"></i> gatewaygetaways@gmail.com</a>
-            </li>
-          </ul>
-        </div>
-        <!-- Quick Links Container -->
-        <div class="col-12 col-md-4 mb-4 mb-md-0">
-          <h3 class="text-center text-black-50">Links</h3>
-          <ul class="quick-links list-unstyled text-center mt-3 text-primary">
-            <li class="mb-2">
-              <a href="index.html" class="text-decoration-none">vacation</a>
-            </li>
-            <li class="mb-2">
-              <a href="#" class="text-decoration-none">Flights</a>
-            </li>
-            <li class="mb-2">
-              <a href="#" class="text-decoration-none">Hotel</a>
-            </li>
-            <li class="mb-2">
-              <a href="#contact" class="text-decoration-none">Contact</a>
-            </li>
-          </ul>
-        </div>
-        <!-- Social Media Container -->
-        <div class="col-12 col-md-4">
-          <h3 class="text-center text-black-50">Social Media</h3>
-          <ul class="social-media-links list-unstyled d-flex justify-content-center text-primary">
-            <li class="fs-4">
-              <a href="https://www.facebook.com/" target="_blank" title="Facebook" aria-label="Facebook"
-                rel="noopener"><i class="fa-brands fa-square-facebook"></i></a>
-            </li>
-            <li class="fs-4">
-              <a href="https://www.instagram.com/" target="_blank" title="Instagram" aria-label="Instagram"
-                rel="noopener"><i class="fa-brands fa-instagram"></i></a>
-            </li>
-            <li class="fs-4">
-              <a href="https://x.com/" target="_blank" title="X" aria-label="X" rel="noopener"><i
-                  class="fa-brands fa-x-twitter"></i></a>
-            </li>
-          </ul>
-        </div>
+  <footer class="d-flex justify-content-center py-5" style="background-color:var(--body-bg-color);"
+    data-bs-theme="light">
+    <div class="container row">
+      <!-- Contact Details Container -->
+      <div class="col-12 col-md-4 mb-4 mb-md-0">
+        <h3 class="text-center text-black-50">Contact Details</h3>
+        <ul class="list-unstyled text-center mt-3">
+          <li class="mb-2 text-primary">
+            <a href="tel:012345678910" target="_blank">
+              <i class="fa-solid fa-phone me-2"></i> 012345678910</a>
+          </li>
+          <li class="mb-2 text-primary">
+            <a aria-label="Opens a new tab to email" href="mailto:gatewaygetaways.com" target="_blank">
+              <i class="fa-solid fa-envelope me-2"></i> gatewaygetaways@gmail.com</a>
+          </li>
+        </ul>
       </div>
-    </footer>
+      <!-- Quick Links Container -->
+      <div class="col-12 col-md-4 mb-4 mb-md-0">
+        <h3 class="text-center text-black-50">Links</h3>
+        <ul class="quick-links list-unstyled text-center mt-3 text-primary">
+          <li class="mb-2">
+            <a href="index.html" class="text-decoration-none">vacation</a>
+          </li>
+          <li class="mb-2">
+            <a href="#" class="text-decoration-none">Flights</a>
+          </li>
+          <li class="mb-2">
+            <a href="#" class="text-decoration-none">Hotel</a>
+          </li>
+          <li class="mb-2">
+            <a href="#contact" class="text-decoration-none">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Social Media Container -->
+      <div class="col-12 col-md-4">
+        <h3 class="text-center text-black-50">Social Media</h3>
+        <ul class="social-media-links list-unstyled d-flex justify-content-center text-primary">
+          <li class="fs-4">
+            <a href="https://www.facebook.com/" target="_blank" title="Facebook" aria-label="Facebook" rel="noopener"><i
+                class="fa-brands fa-square-facebook"></i></a>
+          </li>
+          <li class="fs-4">
+            <a href="https://www.instagram.com/" target="_blank" title="Instagram" aria-label="Instagram"
+              rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li class="fs-4">
+            <a href="https://x.com/" target="_blank" title="X" aria-label="X" rel="noopener"><i
+                class="fa-brands fa-x-twitter"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
   <!-- Bootstrap Javascript from getbootstrap.com -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
