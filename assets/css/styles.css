@@ -190,3 +190,9 @@ footer a {
     color: var(--primary-color);
     text-decoration-line: none;
 }
+
+/* Laptop devices and bigger */
+@media screen and (min-width:  1024px) {
+   .weather-temperature img{
+      height:50vh;
+   }
