@@ -27,8 +27,9 @@
 body {
     font-family: var(--primary-font);
     width: 100%;
-    background-color: var(--bakground-color);
+    background-color: var(--body-bg-color);
     font-size: 20px;
+    color: var(--primary-color);
 }
 
 /* Hero section */
@@ -185,6 +186,18 @@ input[type="date"]:not([value=""]):before {
 .hot-weather {
   color: red;
 }
+
+.card{
+  text-align: center;
+}
+
+.card img{
+  opacity: 0.8;
+}
+
+
+
+
 
 footer a {
     color: var(--primary-color);
