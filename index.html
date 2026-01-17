@@ -72,12 +72,12 @@
     <section id="form-index" class="container-fluid">
       <h3>Book your trip below</h3>
       <div class="row">
-        <div class="form-group col-md align-items-start flex-column">
+        <div class="form-group col-12 col-md-6 mb-3">
           <!-- Origin location -->
           <label for="origin" class="d-inline-flex">From</label>
           <input type="text" placeholder="City or Airport" class="form-control" id="origin" name="origin" required>
         </div>
-        <div class="form-group col-md align-items-start flex-column">
+        <div class="form-group col-12 col-md-6 mb-3">
           <!-- Destination location -->
           <label for="destination" class="d-inline-flex">To</label>
           <input type="text" placeholder="City or Airport" class="form-control" id="destination" name="destination"
@@ -85,13 +85,13 @@
         </div>
       </div>
       <div class="row">
-        <div class="form-group col-md align-items-start flex-column">
+        <div class="form-group col-12 col-md-6 mb-3">
           <!-- Departure date -->
           <label for="departure-date" class="d-inline-flex">Depart</label>
           <input type="date" class="form-control" id="departure-date" name="departure-date" onkeydown="return false"
             required>
         </div>
-        <div class="form-group col-md align-items-start flex-column">
+        <div class="form-group col-12 col-md-6 mb-3">
           <!-- Return date -->
           <label for="return-date" class="d-inline-flex">Return</label>
           <input type="text" value="One way" onclick="activateReturnDate(this)" class="form-control" id="return-date"
@@ -99,7 +99,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="form-group col-lg-3 align-items-start flex-column">
+        <div class="form-group col-lg-3 mb-3">
           <!-- Adults -->
           <label for="adults" class="d-inline-flex col-auto">Adults <span class="sublabel">12+
             </span></label>
@@ -115,7 +115,7 @@
             <option value="9">9</option>
           </select>
         </div>
-        <div class="form-group col-lg-3 align-items-start flex-column">
+        <div class="form-group col-lg-3 mb-3">
           <!-- Children -->
           <label for="children" class="d-inline-flex col-auto">Children <span class="sublabel"> 2-11
             </span></label>
@@ -131,7 +131,7 @@
             <option value="8">8</option>
           </select>
         </div>
-        <div class="form-group col-lg-3 align-items-start flex-column">
+        <div class="form-group col-lg-3 mb-3">
           <!-- Infants -->
           <label for="infants" class="d-inline-flex col-auto">Infants <span class="sublabel"> less than
               2</span></label>
@@ -142,7 +142,7 @@
           </select>
         </div>
         <!-- Cabin Class -->
-        <div class="form-group col-lg-3 align-items-start flex-column">
+        <div class="form-group col-lg-3 mb-3">
           <label for="cabin" class="d-inline-flex">Cabin</label>
           <select class="form-select" id="cabin">
             <option value="ECONOMY">Economy</option>
@@ -169,7 +169,7 @@
           </div>
           <span id="totalLabel" class="small text-nowrap">Price Total</span>
           <!-- Money input for vacation-->
-          <div class="input-group ms-3" style="max-width:200px">
+          <div class="input-group ms-0 ms-md-3 w-100 w-md-auto ">
             <span class="input-group-text">£</span>
             <input type="number" class="form-control" id="amountInput" placeholder="0.00" min="0">
           </div>
@@ -195,7 +195,7 @@
           <div class="carousel-item active">
             <img src="assets/images/best-destinations/bali.jpg" class="d-block w-100"
               alt="Picture of sea temple in Bali.">
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption">
               <h3 class="h2 fw-bold">No.1 Bali</h3>
               <p>Indonesia</p>
             </div>
@@ -203,7 +203,7 @@
           <div class="carousel-item">
             <img src="assets/images/best-destinations/london.jpg" class="d-block w-100"
               alt="Picture of london eye at the angle of the river thames.">
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption">
               <h3 class="h2 fw-bold">No.2 London</h3>
               <p>England</p>
             </div>
@@ -211,7 +211,7 @@
           <div class="carousel-item">
             <img src="assets/images/best-destinations/dubai.jpg" class="d-block w-100"
               alt="Picture of the buildings either side of river in Dubai.">
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption">
               <h3 class="h2 fw-bold">No.3 Dubai</h3>
               <p>United Arab Emirates</p>
             </div>
@@ -219,7 +219,7 @@
           <div class="carousel-item">
             <img src="assets/images/best-destinations/hanoi.jpg" class="d-block w-100"
               alt="Picture of the train track in middle of street in Hanoi.">
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption">
               <h3 class="h2 fw-bold">No.4 Hanoi</h3>
               <p>Vietnam</p>
             </div>
@@ -227,7 +227,7 @@
           <div class="carousel-item">
             <img src="assets/images/best-destinations/paris.jpg" class="d-block w-100"
               alt="Picture of the eiffel tower from in middle of a street in Paris.">
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption">
               <h3 class="h2 fw-bold">No.5 Paris</h3>
               <p>France</p>
             </div>
@@ -235,7 +235,7 @@
           <div class="carousel-item">
             <img src="assets/images/best-destinations/rome.jpg" class="d-block w-100"
               alt="Picture of the Rome colosseum beyond a balcony of someone having a cuppa in Rome.">
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption">
               <h3 class="h2 fw-bold">No.6 Rome</h3>
               <p>Italy</p>
             </div>
@@ -243,7 +243,7 @@
           <div class="carousel-item">
             <img src="assets/images/best-destinations/marrakech.jpg" class="d-block w-100"
               alt="Picture of the Marrakech market">
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption">
               <h3 class="h2 fw-bold">No.7 Marrakech</h3>
               <p>Morocco</p>
             </div>
@@ -251,7 +251,7 @@
           <div class="carousel-item">
             <img src="assets/images/best-destinations/bangkok.jpg" class="d-block w-100"
               alt="Picture of the buildings in Bangkok">
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption">
               <h3 class="h2 fw-bold">No.8 Bangkok</h3>
               <p>Thailand</p>
             </div>
@@ -259,7 +259,7 @@
           <div class="carousel-item">
             <img src="assets/images/best-destinations/crete.jpg" class="d-block w-100"
               alt="Picture of a birdseye view across the water looking towards Crete">
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption">
               <h3 class="h2 fw-bold">No.9 Crete</h3>
               <p>Greece</p>
             </div>
