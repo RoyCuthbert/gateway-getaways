@@ -128,7 +128,7 @@ input[type="date"]:not([value=""]):before {
 /* Switch wrapper */
 .switch {
   position: relative;
-  width: 70px;
+  width: 55px;
   height: 28px;
 }
 
