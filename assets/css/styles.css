@@ -90,33 +90,35 @@ input[type="date"]:not([value=""]):before {
 }
 
 #best-destinations {
-    height: 400px; /* Set a fixed height for all containers */
     width: 100%; /* Ensure containers are full width */
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden; /* Hides any part of the image that goes outside the container */
     position: relative;
 }
 
-#best-destinations img {
-   height: 100%; /* Set a fixed height for all containers */
-    width: auto; /* auto width for aspect ratio*/
-    object-fit: cover;
-    opacity: 0.5;
+/* Carousel Container */
+.destination-carousel .carousel-item{
+  aspect-ratio: 16/9; /*Desktop*/
 }
 
+/* Carousel Images */
+.destination-carousel img{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+  opacity: 0.7;
+}
 
+/*  styling for font in Carousel */
 .carousel-caption {
-    position: absolute; /* Position the caption relative to the container */
-    top: 48%;
+    padding:0.75rem, 1rem;
     z-index: 2; /* Ensure caption is above the image */
-    color: rgb(0, 0, 0); /* Make text visible over images */
     text-align: center; /* Center the text horizontally within the caption div */
-    width: 75%; /* Control the width of the caption text block */
+    max-width: 90%; /* Control the width */
     font-size: xx-large;
     font-weight: 900;
-
+    left:5%;
+    right:5%;
+    bottom: 1.25rem;
+    color:black;
 }
 
 .weather-switch {
@@ -197,15 +199,43 @@ input[type="date"]:not([value=""]):before {
 
 
 
-
-
 footer a {
     color: var(--primary-color);
     text-decoration-line: none;
 }
 
+/* Mobile device upto Tablet */
+@media screen and(max-width: 768px){
+  .destination-carousel .carousel-item{
+    aspect-ratio: 3/4;
+  }
+  .destination-carousel img{
+    object-position: center;
+  }
+  .destination-carousel .carousel-caption{
+    bottom:0.75rem;
+    padding:0.5rem 0.75rem;
+  }
+   .destination-carousel .carousel-caption h3 {
+    font-size: 1.25rem;
+  }
+
+  .destination-carousel .carousel-caption p {
+    font-size: 0.9rem;
+    margin-bottom: 0;
+  }
+}
+
+
+/* Tablet devices and bigger */
+@media screen and (min-width: 768px) {
+  .carousel-caption{
+    top:50%;
+  } 
+}
 /* Laptop devices and bigger */
-@media screen and (min-width:  1024px) {
+@media screen and (min-width:1024px) {
    .weather-temperature img{
       height:50vh;
    }
+}
